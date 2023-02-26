@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var message = ViewData["Results"];
+}
+
+<div class="text-center">
+
+    @if (message == null)
+    {
+        <h1 class="display-4">Welcome</h1>
+    }
+    
+    <h1 class="display-4">@ViewData["Results"]</h1>
+    
+    <a asp-controller="Clients" asp-action="Create">Add a client</a>
+   
+    
+</div>
